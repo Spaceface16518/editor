@@ -10,5 +10,4 @@ window.onload = () => {
 };
 
 // save on changes (debounced by 5 secs)
-document.getElementById("editor").oninput = debounce(save, 0);
-
+document.getElementById("editor").oninput = debounce(save, 1000);
