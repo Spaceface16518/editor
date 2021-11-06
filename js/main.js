@@ -1,5 +1,5 @@
 import { restore, save } from "./storage";
-import { debounce } from "./debounce";
+import { debounce } from "lodash-es";
 
 window.onload = () => {
   // restore on page load
