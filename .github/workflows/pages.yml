@@ -25,3 +25,5 @@ jobs:
         build_dir: dist
         jekyll: false
         verbose: true
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
