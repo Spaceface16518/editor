@@ -10,4 +10,7 @@ window.onload = () => {
 };
 
 // save on changes (debounced by 5 secs)
-document.getElementById("editor").oninput = debounce(save, 1000);
+document.getElementById("editor").oninput = debounce(save, 500);
+
+// save on visibility change (i.e. user closes page, switches tab, refreshes, etc.)
+document.onvisibilitychange = save;
